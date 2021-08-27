@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">lcd3</string>
+    <string-array name="alert_member_level">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dog_list">
+        <item>威士比</item>
+        <item>皮皮</item>
+        <item>小黑</item>
+        <item>芬達</item>
+        <item>黑木耳</item>
+        <item>嚕嚕</item>
+        <item>豆漿</item>
+    </string-array>
+</resources>

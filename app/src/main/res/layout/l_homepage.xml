@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_background"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/homepage_l1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#303030">
+
+            <TextView
+                android:id="@+id/T_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="問題回應"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/t_mytime_question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2021/6/4 20:55"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/gray_8"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/eye"
+                android:id="@+id/myeye_question2"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/t_clickTime_question2"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/t_clickTime_question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="0"
+                android:textColor="@color/gray_8"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/t_tags_question2"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#犬傷人#犬受傷"
+            android:textColor="@color/tag_color"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/t_myTitle_question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="問題1"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/t_myContent_question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:textColor="@color/gray_8"
+            android:text="問題內容1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888888"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:id="@+id/homepage_l2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lllll"
+                android:orientation="horizontal">
+                <NumberPicker
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:id="@+id/pick_year"/>
+                <NumberPicker
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:id="@+id/pick_month"/>
+                <NumberPicker
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+
+                    android:id="@+id/pick_dog_name"/>
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btbg_search"
+                    android:id="@+id/b_search" />
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btbg_qrcode" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:text="2021 年 5 月 小黑"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/dogEatTime"
+                android:layout_below="@+id/lllll"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="invisible"
+            android:id="@+id/mylinechart"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

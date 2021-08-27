@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".show_dog_file">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/show_file_relativelayout"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="  單位：匙  "
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:id="@+id/e_show_file"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"/>
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="紀錄"
+            android:id="@+id/b_show_file"
+            android:layout_toRightOf="@+id/e_show_file"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/myFrame"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/d3"
+                android:id="@+id/show_image_book"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.widget.Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btbg_show_image_cha"
+                android:layout_alignParentRight="true"
+                android:id="@+id/b_show_dog_image"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+</FrameLayout>

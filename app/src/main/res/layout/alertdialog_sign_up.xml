@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/describe_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用者名稱"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <TextView
+            android:id="@+id/t_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/describe_userName"
+            app:layout_constraintTop_toBottomOf="@+id/describe_userName"
+            app:layout_constraintVertical_bias="0.018" />
+
+        <TextView
+            android:id="@+id/describe_userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用者 Email"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/t_userName"
+            app:layout_constraintTop_toBottomOf="@+id/t_userName"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/t_userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/describe_userEmail"
+            app:layout_constraintTop_toBottomOf="@+id/describe_userEmail"
+            app:layout_constraintVertical_bias="0.018" />
+
+        <TextView
+            android:id="@+id/describe_userNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暱稱"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/t_userEmail"
+            app:layout_constraintTop_toBottomOf="@+id/t_userEmail"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <EditText
+            android:id="@+id/e_userNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/describe_userNickName"
+            app:layout_constraintTop_toBottomOf="@+id/describe_userNickName"
+            app:layout_constraintVertical_bias="0.018" />
+
+        <TextView
+            android:id="@+id/describe_nickNameExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(此暱稱將顯示給其他使用者)"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/e_userNickName"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/e_userNickName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/t_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性別"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/describe_userNickName"
+            app:layout_constraintTop_toBottomOf="@+id/describe_nickNameExplain"
+            app:layout_constraintVertical_bias="0.161" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="105dp"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/t_gender"
+            app:layout_constraintTop_toBottomOf="@+id/t_gender"
+            app:layout_constraintVertical_bias="0.067">
+
+            <RadioButton
+                android:id="@+id/r_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:checked="true"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/r_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/t_bornYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身分"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/rg_gender"
+            app:layout_constraintTop_toBottomOf="@+id/rg_gender"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <RadioGroup
+            android:id="@+id/rg_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/t_bornYear"
+            app:layout_constraintTop_toBottomOf="@+id/t_bornYear"
+            app:layout_constraintVertical_bias="0.107">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/r_student"
+                android:checked="true"
+                android:text="學生"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/r_teacher"
+                android:text="教職人員"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/r_others"
+                android:text="校外人士"/>
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>
